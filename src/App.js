@@ -2,6 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import { buttonsArray } from "./buttons";
 
+// https://gist.github.com/MeFoDy/067daabf9c3ea0e554f045fc067e23b0
+
 function App() {
   const [imageIndex, setImageIndex] = useState(null);
 
