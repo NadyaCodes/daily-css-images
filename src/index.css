@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "./styles/bear-cub.css";
+
+header {
+  margin: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  background-color: #000e3e;
+  color: #b2e0da;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  border: 2px solid #b2e0da;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: .4rem;
+  margin: auto;
+}
+
+.teal {
+  color: #11bca6;
+}
+
+.border-box {
+  border: 2px solid #b2e0da;
+  padding: 1rem;
+  border-radius: .4rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.image-button {
+  background-color: transparent;
+  border: none;
+  color: #11bca6;
+  font-size: 1.5rem;
+  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 1rem;
+}
+
+.image-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #b2e0da;
+  transition: all 300ms ease;
+  z-index: -1;
+}
+
+
+.image-button:hover::after {
+  left: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }

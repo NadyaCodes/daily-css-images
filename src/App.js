@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import { buttonsArray } from "./buttons";
 
 function App() {
+  const [imageIndex, setImageIndex] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App">
+        <div className="border-box">
+          <h1>
+            My <em className="teal">CSS ART</em> Journey
+          </h1>
+        </div>
       </header>
+      <body>
+        <div className="button-container">
+          {buttonsArray.map((btn, index) => {
+            return (
+              <button
+                className="image-button"
+                onClick={() => setImageIndex(index)}
+                key={index}
+              >
+                {btn.text}
+              </button>
+            );
+          })}
+        </div>
+        {imageIndex !== null && (
+          <div className="image-container">
+            {buttonsArray[imageIndex] && buttonsArray[imageIndex].component}
+          </div>
+        )}
+      </body>
     </div>
   );
 }
