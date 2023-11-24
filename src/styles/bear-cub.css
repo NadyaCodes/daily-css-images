@@ -1,4 +1,4 @@
-.bear {
+#bear {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,11 +8,11 @@
 }
 
 
-.bear-ears {
+#bear .ears {
 display: flex;
 }
 
-.bear-ear {
+#bear .ear {
   width: 4rem;
   height: 4rem;
   background-color: #4a2525;
@@ -22,7 +22,7 @@ display: flex;
   z-index: 2;
 }
 
-.bear-ear::after {
+#bear .ear::after {
   content: "";
   width: 3rem;
   height: 3rem;
@@ -33,7 +33,7 @@ display: flex;
   z-index: 4;
 }
 
-.bear-head {
+#bear .head {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -47,12 +47,12 @@ display: flex;
   align-items: center;
 }
 
-.bear-eyes {
+#bear .eyes {
 display: flex;
 justify-content: space-evenly;
 }
 
-.bear-eye {
+#bear .eye {
   background-color: black;
   width: 1.5rem;
   height: 1.5rem;
@@ -61,7 +61,7 @@ justify-content: space-evenly;
   border-radius: 50%;
 }
 
-.bear-eye::after {
+#bear .eye::after {
   content: "";
   background-color: #e7dede;
   width: .7rem;
@@ -72,7 +72,7 @@ justify-content: space-evenly;
   transform: rotate(40deg) translateX(.2rem) translateY(.2rem);
 }
 
-.bear-muzzle {
+#bear .muzzle {
   width: 4rem;
   height: 3rem;
   margin-top: -1.5rem;
@@ -86,7 +86,7 @@ justify-content: space-evenly;
   flex-direction: column;
 }
 
-.bear-nose {
+#bear .nose {
   width: 2.5rem;
   height: 2rem;
   margin-top: -.2rem;
@@ -97,7 +97,7 @@ justify-content: space-evenly;
   background-color: #000000;
 }
 
-.bear-nose::after {
+#bear .nose::after {
   content: "";
   background-color: #e7dede;
   width: 1rem;
@@ -111,7 +111,7 @@ justify-content: space-evenly;
   transform: translateX(-.5rem) translateY(.3rem);
 }
 
-.bear-smile {
+#bear .smile {
   height: 2rem;
   width: 2.3rem;
   border-bottom: 4px solid black;
@@ -120,7 +120,7 @@ justify-content: space-evenly;
   margin-bottom: .2rem;
 }
 
-.bear-body {
+#bear .body {
   height: 15rem;
   width: 10rem;
   margin-top: -2rem;
@@ -131,7 +131,7 @@ justify-content: space-evenly;
   justify-content: space-around;
 }
 
-.bear-body::after {
+#bear .body::after {
   content: "";
   height: 8rem;
   width: 6rem;
@@ -144,13 +144,13 @@ justify-content: space-evenly;
   transform: translateX(2rem);
 }
 
-.bear-arms {
+#bear .arms {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.bear-arm {
+#bear .arm {
   height: 5rem;
   width: 8rem;
   border-radius: 50%;
@@ -160,23 +160,23 @@ justify-content: space-evenly;
   display: flex;
 }
 
-.bear-arm-left {
+#bear .arm-left {
   transform: rotate(30deg);
   
 }
 
-.bear-arm-right {
+#bear .arm-right {
   transform: rotate(-30deg);
   justify-content: flex-end;
 }
 
-.bear-legs {
+#bear .legs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.bear-leg {
+#bear .leg {
   height: 6rem;
   width: 10rem;
   border-radius: 50%;
@@ -186,29 +186,29 @@ justify-content: space-evenly;
   display: flex;
 }
 
-.bear-leg-left {
+#bear .leg-left {
   transform: rotate(-40deg) translateY(2rem) translateX(-1rem);
 }
 
-.bear-leg-right {
+#bear .leg-right {
   transform: rotate(40deg) translateY(2rem) translateX(1rem);
   justify-content: flex-end;
 }
 
 
-.bear-paw {
+#bear .paw {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.bear-toes {
+#bear .toes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.bear-toe {
+#bear .toe {
   height: .6rem;
   width: .5rem;
   margin:1px;
@@ -216,12 +216,12 @@ justify-content: space-evenly;
   background-color: #1c0c0c;
 }
 
-.bear-toe:nth-child(2),
-.bear-toe:nth-child(3) {
+#bear .toe:nth-child(2),
+#bear .toe:nth-child(3) {
   transform: translateY(-.7rem);
 }
 
-.bear-pad {
+#bear .pad {
   height: 1.2rem;
   width: 1.5rem;
   border-bottom-left-radius: 42%;
@@ -233,18 +233,18 @@ justify-content: space-evenly;
 }
 
 
-.bear-arm-left > .bear-paw {
+#bear .arm-left > .paw {
   transform: rotate(-90deg) translateY(2.4rem);
 }
 
-.bear-arm-right > .bear-paw {
+#bear .arm-right > .paw {
   transform: rotate(90deg) translateY(2.4rem) translateX(.1rem);
 }
 
-.bear-leg-left > .bear-paw {
+#bear .leg-left > .paw {
   transform: rotate(-90deg) translateY(3.6rem) translateX(.1rem) scale(110%);
 }
 
-.bear-leg-right > .bear-paw {
+#bear .leg-right > .paw {
   transform: rotate(90deg) translateY(3.6rem) translateX(.1rem) scale(110%);
 }

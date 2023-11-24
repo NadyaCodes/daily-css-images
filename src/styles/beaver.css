@@ -1,0 +1,283 @@
+#beaver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#beaver .head {
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+#beaver .face {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 45% 45% 50% 50% / 60% 60% 40% 40%;
+  background-color: rgb(160, 90, 44);
+  position: absolute;
+}
+
+#beaver .ears {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#beaver .ear {
+  width: 3rem;
+  height: 4rem;
+  border-radius: 50% / 60% 60% 40% 40%;
+  background-color: rgb(76, 40, 16);
+}
+
+#beaver .eyes {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#beaver .eye {
+  width: .8rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 1rem 0 1rem;
+}
+
+#beaver .eye::after {
+  content: "";
+  background-color: white;
+  width: .25rem;
+  height: .4rem;
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  margin-left: .5rem;
+  transform: translateY(.2rem);
+}
+
+#beaver .eye::before {
+  content: "";
+  border: 5px solid black;
+  width: 1.5rem;
+  height: 2rem;
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  position: absolute;
+}
+
+#beaver .nose {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 40% 40% 50% 50% / 20% 20% 70% 70%;
+  position: relative;
+  align-self: center;
+  z-index: 10;
+}
+
+#beaver .muzzle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: -.8rem;
+  z-index: 8;
+}
+
+#beaver .muzzle-side {
+  width: 2.5rem;
+  height: 3rem;
+  background-color: rgb(233, 191, 163);
+  border-radius: 50%;
+  position: relative;
+  margin: -.1rem;
+}
+
+#beaver .teeth {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: -1.8rem;
+}
+
+#beaver .tooth {
+  height:3rem;
+  width: 1rem;
+  background-color: rgb(254, 248, 245);
+  border-radius: .3rem;
+  margin: .02rem;
+}
+
+#beaver .mouth {
+  width: 2.2rem;
+  height: 2.5rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 3.4rem;
+  z-index: 4;
+}
+
+#beaver .body {
+  width: 11rem;
+  height: 17rem;
+  background-color: rgb(160, 90, 44);
+  border-radius: 47%;
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 3;
+}
+
+#beaver .body::after {
+  content: "";
+  width: 7rem;
+  height: 11rem;
+  background-color: rgb(233, 191, 163);
+  border-radius: 47%;
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  margin-bottom: 3rem;
+}
+
+
+#beaver .arms {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: -3rem;
+z-index: 5;
+}
+
+#beaver .arm {
+  width: 4rem;
+height: 3rem;
+background-color: rgb(160, 90, 44);
+border-radius: 47%;
+margin: 3rem 3rem 0 3rem;
+}
+
+#beaver .arm:nth-child(1) {
+  transform: rotate(-10deg) translate(-.8rem, .8rem);
+}
+
+#beaver .arm:nth-child(2) {
+  transform: rotate(-30deg) translate(.5rem, .2rem);
+}
+
+#beaver .legs {
+  display: flex;
+  flex-direction: row;
+  width: 190%;
+  justify-content: space-between;
+}
+
+#beaver .leg {
+  width: 7rem;
+  height: 3rem;
+  background-color: rgb(160, 90, 44);
+  border-radius: 47%;
+  margin: 0 2rem 0 2rem;
+}
+
+#beaver .leg:nth-child(1) {
+  transform: rotate(28deg) translate(-1rem, -1rem);
+}
+
+#beaver .tail {
+  width: 9rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: rgb(76, 40, 16);
+  position: absolute;
+  z-index: 2;
+  transform: rotate(40deg) translate(4.5rem, -4rem);
+  bottom: 0;
+  background-image: 
+    linear-gradient(90deg, transparent 1rem, #0e0702 1rem, #0e0702 1rem, transparent 1.5rem),
+    linear-gradient(0deg, transparent 1rem, #0e0702 1rem, #0e0702 1rem, transparent 1.5rem);
+  background-size: 2rem 100%, 100% 2rem;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat;
+}
+
+
+#beaver .cane-container {
+  position: absolute;
+  transform: translate(12rem, 4rem) rotate(70deg) scaleX(-1);
+  z-index: 5;
+}
+
+#beaver .cane {
+width: 4rem;
+height: 4rem;
+border-top: 20px solid black;
+border-right: 20px solid black;
+border-left: 20px solid black;
+border-bottom: 20px solid transparent;
+border-radius: 50%;
+}
+
+
+#beaver .cane::after {
+  content: "";
+  display: flex;
+  width: 2rem;
+  height: 10rem;
+  border-right: 20px solid black;
+  transform: rotate(45deg) translate(-0.23rem, 2.5rem);
+}
+
+
+#beaver .cane::before {
+  content: "";
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  transform: rotate(0deg);
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+#beaver .tophat {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+  transform: rotate(-25deg) translate(-2.4rem, -2.2rem);
+}
+
+#beaver .tophat-main {
+  width: 7.2rem;
+  height:6rem;
+  border-radius: 10%;
+  background-color: black;
+}
+
+#beaver .tophat-brim {
+  width: 12rem;
+  height: 1rem;
+  border-radius: .2rem;
+  background-color: black;
+  margin-top: -.5rem;
+}

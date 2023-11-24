@@ -1,4 +1,4 @@
-.elephant {
+#elephant {
   margin: auto;
   width: fit-content;
   padding-top: 3rem;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.elephant-head-container {
+#elephant .head-container {
   width: 12rem;
   height: 12rem;
   background-color: rgb(107, 144, 167);
@@ -16,13 +16,13 @@
   position: relative;
 }
 
-.elephant-ears {
+#elephant .ears {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.elephant-ear {
+#elephant .ear {
   position: relative;
   width: 9rem;
   height: 12rem;
@@ -33,7 +33,7 @@
   z-index: 5;
 }
 
-.elephant-ear::before {
+#elephant .ear::before {
   content: "";
   position: absolute;
   top: 0;
@@ -46,21 +46,21 @@
 }
 
 
-.elephant-ear:nth-child(1){
+#elephant .ear:nth-child(1){
   transform: rotate(50deg);
 }
-.elephant-ear:nth-child(2){
+#elephant .ear:nth-child(2){
   transform: rotate(130deg) scaleY(-1);
 }
 
-.elephant-ears-inners {
+#elephant .ears-inners {
   position: absolute;
   display: flex;
   flex-direction: row;
   z-index: 6;
 }
 
-.elephant-ear-inner {
+#elephant .ear-inner {
   width: 8rem;
   height: 9rem;
   background-color: #edbdbd;
@@ -70,7 +70,7 @@
   margin-top: 2.5rem;
 }
 
-.elephant-head {
+#elephant .head {
   width: 12rem;
   height: 12rem;
   background-color: rgb(107, 144, 167);
@@ -81,7 +81,7 @@
   z-index: 10;
 }
 
-.elephant-trunk {
+#elephant .trunk {
   position: absolute;
   z-index: 20;
   bottom: 5rem;
@@ -96,7 +96,7 @@
   box-shadow: 0px 100px 39px -50px rgba(0,0,0,0.74);
 }
 
-.elephant-mouth {
+#elephant .mouth {
   position: absolute;
   border-bottom: 15px solid black;
   border-radius: 50%;
@@ -108,7 +108,7 @@
 }
 
 
-.elephant-eyes {
+#elephant .eyes {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -116,7 +116,7 @@ position: absolute;
 top: 2rem;
 }
 
-.elephant-eye {
+#elephant .eye {
 width: 2rem;
 height: 3rem;
 background-color: white;
@@ -125,7 +125,7 @@ margin: 1rem;
 z-index: 20;
 }
 
-.elephant-eye::after {
+#elephant .eye::after {
   content: "";
   width: 1rem;
   height: 1.1rem;
@@ -136,7 +136,7 @@ z-index: 20;
   margin-top:.2rem;
 }
 
-.elephant-bowtie {
+#elephant .bowtie {
   position: absolute;
   bottom: -3rem;
   z-index: 30;
@@ -144,28 +144,28 @@ z-index: 20;
   flex-direction: row;
 }
 
-.elephant-bowtie-side {
+#elephant .bowtie-side {
   background-color: rgb(147, 11, 11);
   width: 2.3rem;
   height: 3rem;
   border-radius: 50% / 80% 80% 20% 20% ;
 }
 
-.elephant-bowtie-middle {
+#elephant .bowtie-middle {
   background-color: rgb(147, 11, 11);
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
 }
 
-.elephant-bowtie-left {
+#elephant .bowtie-left {
   transform: rotate(90deg) translateX(-.75rem);
 }
-.elephant-bowtie-right {
+#elephant .bowtie-right {
   transform: rotate(-90deg) translateX(.75rem);
 }
 
-.elephant-body {
+#elephant .body {
   width: 12rem;
   height: 15rem;
   background-color: rgb(107, 144, 167);
@@ -175,14 +175,14 @@ z-index: 20;
   justify-content: center;
 }
 
-.elephant-front-legs {
+#elephant .front-legs {
   display: flex;
   flex-direction: row;
   position: absolute;
 
 }
 
-.elephant-front-leg {
+#elephant .front-leg {
   height: 10rem;
   width: 5rem;
   margin: 5rem .2rem  0 .2rem;
@@ -195,14 +195,14 @@ z-index: 20;
   justify-content: flex-end;
 }
 
-.elephant-toes {
+#elephant .toes {
 display: flex;
 flex-direction: row;
 width: 100%;
 justify-content: space-around;
 }
 
-.elephant-toe {
+#elephant .toe {
   height: .8rem;
   width: 1rem;
   border-top-right-radius: 50%;
@@ -211,13 +211,13 @@ justify-content: space-around;
 }
 
 
-.elephant-back-legs {
+#elephant .back-legs {
   display: flex;
   position: absolute;
   margin-top: 2rem;
 }
 
-.elephant-back-leg {
+#elephant .back-leg {
   width: 8rem;
   height: 11rem;
   border-radius: 50%;

@@ -2,40 +2,40 @@ import React from "react";
 
 export default function BearCub() {
   const paw = (
-    <div className="bear-paw">
-      <div className="bear-toes">
-        <div className="bear-toe"></div>
-        <div className="bear-toe"></div>
-        <div className="bear-toe"></div>
-        <div className="bear-toe"></div>
+    <div className="paw">
+      <div className="toes">
+        <div className="toe"></div>
+        <div className="toe"></div>
+        <div className="toe"></div>
+        <div className="toe"></div>
       </div>
-      <div className="bear-pad"></div>
+      <div className="pad"></div>
     </div>
   );
 
   return (
-    <div className="bear">
-      <div className="bear-ears">
-        <div className="bear-ear bear-ear-left"></div>
-        <div className="bear-ear bear-ear-right"></div>
+    <div id="bear">
+      <div className="ears">
+        <div className="ear ear-left"></div>
+        <div className="ear ear-right"></div>
       </div>
-      <div className="bear-head">
-        <div className="bear-eyes">
-          <div className="bear-eye"></div> <div className="bear-eye"></div>
+      <div className="head">
+        <div className="eyes">
+          <div className="eye"></div> <div className="eye"></div>
         </div>
-        <div className="bear-muzzle">
-          <div className="bear-nose"></div>
-          <div className="bear-smile"></div>
+        <div className="muzzle">
+          <div className="nose"></div>
+          <div className="smile"></div>
         </div>
       </div>
-      <div className="bear-body">
-        <div className="bear-arms">
-          <div className="bear-arm bear-arm-left">{paw}</div>
-          <div className="bear-arm bear-arm-right">{paw}</div>
+      <div className="body">
+        <div className="arms">
+          <div className="arm arm-left">{paw}</div>
+          <div className="arm arm-right">{paw}</div>
         </div>
-        <div className="bear-legs">
-          <div className="bear-leg bear-leg-left">{paw}</div>
-          <div className="bear-leg bear-leg-right">{paw}</div>
+        <div className="legs">
+          <div className="leg leg-left">{paw}</div>
+          <div className="leg leg-right">{paw}</div>
         </div>
       </div>
     </div>
