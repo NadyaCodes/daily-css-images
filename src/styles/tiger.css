@@ -1,0 +1,273 @@
+#tiger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#tiger .head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tiger .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 20rem;
+  height: 18rem;
+  border-radius: 50% / 60% 60% 40% 40%;
+  z-index: 10;
+}
+
+#tiger .ears {
+display: flex;
+flex-direction: row;
+position: absolute;
+justify-content: space-between;
+width: 18rem;
+z-index: 5;
+}
+
+#tiger .ear {
+  width: 5rem;
+  height: 8rem;
+  border-radius: 50% / 60% 60% 40% 40%;
+  background-color: rgb(233, 130, 3);
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tiger .ear::after {
+  content: "";
+  display: flex;
+  width: 3rem;
+  height: 6rem;
+  border-radius: 50% / 60% 60% 40% 40%;
+  background-color: rgb(253, 232, 207);
+}
+
+#tiger .face {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 130, 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#tiger .eyes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tiger .eye-container {
+  width: 5rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: rgb(253, 232, 207);
+  margin: 1rem;
+  border-top: 15px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#tiger .eye-container:nth-child(1) {
+  transform: rotate(-15deg);
+}
+#tiger .eye-container:nth-child(2) {
+  transform: rotate(15deg);
+}
+
+#tiger .eye {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#tiger .eye-left {
+  margin-left: 2rem;
+}
+#tiger .eye-right {
+  margin-left: -2rem;
+}
+
+#tiger .muzzle {
+  width: 11rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: rgb(253, 232, 207);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tiger .nose {
+  width: 4rem;
+  height: 3rem;
+  background-color: black;
+  border-radius: 50% / 60% 60% 40% 40%;
+  margin-top: -1rem;
+}
+
+#tiger .nose::after {
+  content: "";
+  height: 3rem;
+  width: .2rem;
+  position: absolute;
+  background-color: black;
+  margin-left: -.1rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+
+#tiger .stripe-rights {
+  margin-top: -12.9rem;
+  margin-right: -17.7rem;
+  transform: rotate(-20deg);
+}
+
+#tiger .stripe-right {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-right: 100px solid black;
+  border-bottom: 12px solid transparent;
+  margin: .7rem;
+}
+
+#tiger .stripe-right:nth-child(1) {
+  margin-left: 4rem;
+}
+#tiger .stripe-right:nth-child(2) {
+  margin-left: 1rem;
+}
+
+#tiger .stripe-right:nth-child(3) {
+  margin-left: 1rem;
+}
+#tiger .stripe-right:nth-child(4) {
+  margin-left: 2rem;
+}
+
+
+#tiger .stripe-lefts {
+  margin-top: -8.6rem;
+  margin-left: -13.7rem;
+  transform: rotate(20deg);
+}
+
+#tiger .stripe-left {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 100px solid black;
+  border-bottom: 12px solid transparent;
+  margin: .7rem;
+}
+
+#tiger .stripe-left:nth-child(1) {
+  margin-left: -4rem;
+}
+#tiger .stripe-left:nth-child(2) {
+  margin-left: -1rem;
+}
+
+#tiger .stripe-left:nth-child(3) {
+  margin-left: -1rem;
+}
+#tiger .stripe-left:nth-child(4) {
+  margin-left: -2rem;
+}
+
+
+#tiger .stripe-tops {
+  display: flex;
+  flex-direction: row;
+  margin-top: -17.5rem;
+}
+
+#tiger .stripe-top {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-top: 100px solid black;
+  border-right: 12px solid transparent;
+  margin: .3rem;
+}
+
+#tiger .stripe-top:nth-child(1) {
+  margin-top: -1rem;
+  transform: rotate(-20deg);
+}
+#tiger .stripe-top:nth-child(3) {
+  margin-top: -1rem;
+  transform: rotate(20deg);
+}
+
+
+#tiger .butterfly {
+ position: absolute;
+ display: flex;
+ margin: -1.5rem 0 0 .4rem;
+ transform: scale(60%);
+}
+
+#tiger .wing {
+  position: relative;
+  background-color: rgb(107, 107, 231);
+  box-shadow: 1px 10px 11px -6px rgba(0,0,0,0.74);
+  z-index: 11;
+}
+
+#tiger .wing:nth-child(1) {
+  width: 2.3rem;
+  height: 3.3rem;
+  transform: rotate(-40deg);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 80%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 40%;
+  z-index: 12;
+}
+#tiger .wing:nth-child(2) {
+  width: 2.6rem;
+  height: 3.6rem;
+  transform: rotate(60deg);
+  margin-left: -1.2rem;
+  margin-top: -.3rem;
+  border-top-right-radius: 70%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 80%;
+}
+
+#tiger .body {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: .7rem;
+  z-index: 10;
+  margin-bottom: -.4rem;
+}
+
+#tiger .mouth {
+  width: 1.2rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 2rem;
+}
