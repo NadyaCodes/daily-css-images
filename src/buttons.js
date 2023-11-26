@@ -1,6 +1,7 @@
 import BearCub from "./components/BearCub.js";
 import Beaver from "./components/Beaver.js";
 import Elephant from "./components/Elephant.js";
+import Snoopy from "./components/Snoopy.js";
 import Tiger from "./components/Tiger.js";
 
 export const buttonsArray = [
@@ -8,4 +9,5 @@ export const buttonsArray = [
   { text: "Elephant", component: <Elephant /> },
   { text: "Beaver", component: <Beaver /> },
   { text: "Tiger", component: <Tiger /> },
+  { text: "Snoopy", component: <Snoopy /> },
 ];
