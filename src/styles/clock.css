@@ -1,0 +1,51 @@
+#clock {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 25rem;
+}
+
+
+#clock .body {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at center, rgb(19, 19, 59) 65%, rgb(109, 109, 194) 72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock .face {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 248);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock .center {
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+
+#clock .hand-container {
+  animation: rotate-seconds 60s infinite linear;
+  transform-origin: 7% 50%; 
+}
+
+#clock .hand {
+  width: 5rem;
+  height: .3rem;
+  background-color: black;
+  border-radius: .3rem;
+}
+

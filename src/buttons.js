@@ -3,6 +3,7 @@ import Beaver from "./components/Beaver.js";
 import Elephant from "./components/Elephant.js";
 import Snoopy from "./components/Snoopy.js";
 import Tiger from "./components/Tiger.js";
+import Clock from "./components/Clock.js";
 
 export const buttonsArray = [
   { text: "Bear Cub", component: <BearCub /> },
@@ -10,4 +11,5 @@ export const buttonsArray = [
   { text: "Beaver", component: <Beaver /> },
   { text: "Tiger", component: <Tiger /> },
   { text: "Snoopy", component: <Snoopy /> },
+  { text: "Clock", component: <Clock /> },
 ];
