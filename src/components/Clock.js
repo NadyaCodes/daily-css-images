@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 export default function Clock() {
-  const [startTime, setStartTime] = useState(new Date());
-
   const [timeRotate, setTimeRotate] = useState({ s: 0, m: 0, h: 0 });
 
   useEffect(() => {
+    const startTime = new Date();
     const currentSeconds = startTime.getSeconds();
     const currentMinutes = startTime.getMinutes();
     const currentHours24 = startTime.getHours();
@@ -21,7 +20,7 @@ export default function Clock() {
     const hoursStart = verticalAdjust + currentHours * 30 + currentMinutes / 2;
 
     setTimeRotate({ s: secondsStart, m: minutesStart, h: hoursStart });
-  }, [startTime]);
+  }, []);
 
   const numbersArray = () => {
     const numbers = Array.from({ length: 12 }, (_, index) => index + 1);
@@ -29,6 +28,27 @@ export default function Clock() {
     return numbers.map((number) => (
       <div key={number} className={`number`}>
         {number}
+      </div>
+    ));
+  };
+
+  const dotsArray = () => {
+    const dots = Array.from({ length: 60 }, (_, index) => index + 1);
+
+    return dots.map((dot, index) => (
+      <div
+        className="dot-container"
+        style={{ transform: `translateY(-8.7rem) rotate(${index * 6}deg)` }}
+      >
+        <div
+          key={index}
+          className="dot"
+          style={{
+            backgroundColor: `${
+              (index - 1) % 5 === 0 ? "rgb(155, 155, 229)" : "black"
+            }`,
+          }}
+        ></div>
       </div>
     ));
   };
@@ -80,6 +100,7 @@ export default function Clock() {
           </div>
           <div className="center center-cover"></div>
           <div className="numbers">{numbersArray()}</div>
+          <div className="dots">{dotsArray()}</div>
         </div>
       </div>
     </div>

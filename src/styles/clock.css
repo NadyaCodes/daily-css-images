@@ -11,7 +11,7 @@ height: 25rem;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background-image: radial-gradient(circle at center, rgb(19, 19, 59) 65%, rgb(109, 109, 194) 72%);
+  background-image: radial-gradient(circle at center, rgb(50, 50, 114) 65%, rgb(109, 109, 194) 72%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,11 +39,12 @@ height: 25rem;
 #clock .second-hand {
   width: 7rem;
   height: .2rem;
-  background-color: red;
+  background-color: rgb(200, 70, 137);
   border-radius: .3rem;
   position: absolute;
   margin-left: .35rem;
   margin-top: -.1rem;
+  z-index: 5;
 }
 
 
@@ -90,37 +91,6 @@ height: 25rem;
   z-index: 10;
 }
 
-/* #clock .numbers {
-  position: absolute;
-  width: 18rem;
-  height: 18rem;
-  background-color: transparent;
-  border-radius: 50%;
-}
-
-#clock .vertical-numbers {
-  height: 100%;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 2.5rem;
-}
-
-#clock .horizontal-numbers {
-  height: 100%;
-  width: 100%;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 2.5rem;
-  position: absolute;
-  top: 0;
-} */
-
-
 .numbers {
   position: absolute;
   width: 18rem;
@@ -135,46 +105,41 @@ height: 25rem;
   color: black;
   font-size: 2.5rem;
   position: absolute;
+  z-index: 4;
 }
 
-/* .number:nth-child(1) {
-  transform: translate(4.1rem, 1.2rem);
-}
-.number:nth-child(2) {
-  transform: translate(6.8rem, 4rem);
-}
-.number:nth-child(3) {
-  right: .2rem;
-  top: 41%;
-}
-.number:nth-child(4) { transform: translate(7rem, 10.7rem); }
-.number:nth-child(5) { transform: translate(4.3rem, 13.6rem); }
-.number:nth-child(6) {
-  bottom: 0;
-}
-.number:nth-child(7) { transform: translate(-3.8rem, 13.8rem); }
-.number:nth-child(8) { transform: translate(-6.5rem, 11rem); }
-.number:nth-child(9) {
-  left: .5rem;
-  top: 41%;
-}
-.number:nth-child(10) {
-  transform: translate(-6.2rem, 4.1rem);
-}
-.number:nth-child(11) {
-  transform: translate(-3.6rem, 1.1rem);
-} */
+.number:nth-child(1) { transform: translate(3.7rem, 1.4rem); }
+.number:nth-child(2) { transform: translate(6.3rem, 4.1rem); }
+.number:nth-child(3) { right: 1rem; top: 43%; }
+.number:nth-child(4) { transform: translate(6.3rem, 11rem); }
+.number:nth-child(5) { transform: translate(3.7rem, 13.6rem); }
+.number:nth-child(6) { bottom: .4rem; }
+.number:nth-child(7) { transform: translate(-3.7rem, 13.6rem); }
+.number:nth-child(8) { transform: translate(-6.1rem, 11rem); }
+.number:nth-child(9) { left: 1rem; top: 43%; }
+.number:nth-child(10) { transform: translate(-5.7rem, 4.3rem); }
+.number:nth-child(11) { transform: translate(-3.3rem, 1.7rem); }
+.number:nth-child(12) { transform: translate(0rem, .6rem); }
 
+.dots {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(9.2deg);
+}
 
+.dot-container {
+  position: absolute;
+  width: 12.4rem;
+  height: 12.4rem;
+  top: 2.6rem;
+}
 
-.number:nth-child(1) { transform: translate(4.1rem, 1.2rem); }
-.number:nth-child(2) { transform: translate(6.8rem, 4rem); }
-.number:nth-child(3) { right: 0.2rem; top: 41%; }
-.number:nth-child(4) { transform: translate(7rem, 10.7rem); }
-.number:nth-child(5) { transform: translate(4.3rem, 13.6rem); }
-.number:nth-child(6) { bottom: 0; }
-.number:nth-child(7) { transform: translate(-3.8rem, 13.8rem); }
-.number:nth-child(8) { transform: translate(-6.5rem, 11rem); }
-.number:nth-child(9) { left: 0.5rem; top: 41%; }
-.number:nth-child(10) { transform: translate(-6.2rem, 4.1rem); }
-.number:nth-child(11) { transform: translate(-3.6rem, 1.1rem); }
+.dot {
+  width: .3rem;
+  height: .3rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+}
