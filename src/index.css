@@ -3,7 +3,8 @@
 @import "./styles/beaver.css";
 @import "./styles/tiger.css";
 @import "./styles/snoopy.css";
-@import "./styles//clock.css";
+@import "./styles/clock.css";
+@import "./styles/ruler.css";
 
 
 header {
