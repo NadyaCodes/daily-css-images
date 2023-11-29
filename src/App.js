@@ -12,7 +12,7 @@ function App() {
       <header className="App">
         <div className="border-box">
           <h1>
-            My <em className="teal">CSS ART</em> Journey
+            Amazing <em className="teal">CSS ART</em> by Moi
           </h1>
         </div>
       </header>

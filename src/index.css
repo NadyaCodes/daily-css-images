@@ -63,7 +63,7 @@ h1 {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #b2e0da;
+  background-color: #ccf2ed;
   transition: all 300ms ease;
   z-index: -1;
 }
@@ -75,7 +75,7 @@ h1 {
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: auto;
   @media (max-width: 600px) {
     grid-template-columns: repeat(3, 1fr);
