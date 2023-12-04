@@ -6,6 +6,7 @@ import Tiger from "./components/Tiger.js";
 import Clock from "./components/Clock.js";
 import Ruler from "./components/Ruler.js";
 import Notepad from "./components/Notepad.js";
+import Calendar from "./components/Calendar.js";
 
 export const buttonsArray = [
   { text: "Bear Cub", component: <BearCub /> },
@@ -16,4 +17,5 @@ export const buttonsArray = [
   { text: "Clock", component: <Clock /> },
   { text: "Ruler", component: <Ruler /> },
   { text: "Notepad", component: <Notepad /> },
+  { text: "Calendar", component: <Calendar /> },
 ];

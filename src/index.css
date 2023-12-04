@@ -6,6 +6,7 @@
 @import "./styles/clock.css";
 @import "./styles/ruler.css";
 @import "./styles/notepad.css";
+@import "./styles/calendar.css";
 
 
 header {
