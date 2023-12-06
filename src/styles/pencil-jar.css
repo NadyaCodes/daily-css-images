@@ -1,0 +1,248 @@
+#pencilJar {
+  height: 25rem;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+}
+
+#pencilJar .jar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  opacity: 70%;
+  transform: translateY(4rem);
+}
+
+#pencilJar .jar .top {
+  width: 8.2rem;
+  height: 1rem;
+  background-color: rgb(197, 235, 235);;
+  border-radius: .3rem;
+}
+
+#pencilJar .jar .middle {
+  width: 9rem;
+  height: 10rem;
+  background-color: rgb(197, 235, 235);
+  border-radius: 1rem;
+  box-shadow: 90px 10px 69px -3px rgba(122, 131, 131, 0.52);
+}
+
+
+#pencilJar .pencil-container {
+  display: flex;
+  margin-top: 18.4rem;
+  margin-left: -8rem;
+  transform: rotate(-60deg);
+}
+
+#pencilJar .pencil:nth-child(1) {
+  transform: rotate(-60deg) translate(2rem, -3.5rem);
+}
+
+#pencilJar .pencil:nth-child(2) {
+  transform: rotate(-40deg) translate(1.5rem, -2rem);
+}
+
+#pencilJar .pencil {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+}
+
+#pencilJar .pencil .tip {
+  width: 0;
+  height: 0;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  border-right: 1.5rem solid bisque;
+}
+
+#pencilJar .pencil .tip::before {
+  content: '';
+  position: absolute;
+  top: 33.5%;
+  left: 0rem;
+  width: 0;
+  height: 0;
+  border-top: .17rem solid transparent;
+  border-bottom: .17rem solid transparent;
+  border-right: 0.51rem solid grey;
+}
+
+
+#pencilJar .pencil .body {
+  height: 1rem;
+  width: 18rem;
+  background: linear-gradient(rgb(208, 208, 3), yellow 35% 60%, rgb(139, 139, 49));
+}
+
+#pencilJar .pencil:nth-child(2) .body {
+  width: 15rem;
+}
+
+
+#pencilJar .pencil .eraser {
+  height: 1rem;
+  width: 1.2rem;
+  background: linear-gradient(rgb(200, 158, 165), pink 35% 60%, rgb(186, 132, 141));
+  border-bottom-right-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+#pencilJar .pencil .eraser::before {
+  content: "";
+  display: grid;
+  height: 1rem;
+  width: .2rem;
+  background-color: grey;
+}
+
+#pencilJar .snail-container {
+  margin-left: 10rem;
+  position: absolute;
+  bottom: 1.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+  animation: travel-in-right 10s linear forwards;
+}
+
+#pencilJar .snail {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#pencilJar .snail .shell {
+  margin-right: 1rem;
+  margin-bottom: -1.4rem;
+  width: 6rem;
+  height: 5.5rem;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: radial-gradient(circle, rgb(116, 95, 95) 0%,  rgb(61, 53, 53) 100%);
+  z-index: 11;
+}
+
+
+#pencilJar .snail .body {
+  width: 9.8rem;
+  height: 1.5rem;
+  border-radius: 50% 50% 50% 50% / 60% 90% 0% 40%;
+  background-color: rgb(58, 103, 58);
+  z-index: 10;
+  animation: squishy 1s ease-in-out 10;
+}
+
+#pencilJar .snail .body .antenna {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-top: 1px solid transparent;
+  border-right: 4px solid rgb(58, 103, 58);
+  border-bottom: 2px solid transparent;
+  border-radius: 50%;
+  top: 49%;
+  left: -8%;
+  animation: antenna 1s ease-in-out 10;
+  transform-origin: bottom right;
+}
+
+#pencilJar .snail .body .antenna:nth-child(1) {
+  left: 0%;
+  top: 50%;
+  animation-delay: .15s;
+}
+
+#pencilJar .snail .body .antenna::before {
+  content: "";
+  display: flex;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  background-color: rgb(88, 72, 72);
+  margin-left: 1.5rem;
+}
+
+#pencilJar .sludge-line {
+  position: absolute;
+  width: 60vw;
+  height: .25rem;
+  background-color: rgb(172, 232, 172, 50%);
+  bottom: 0;
+  left: 50%;
+}
+
+#pencilJar .snail .eye {
+  margin-left: 1.3rem;
+  margin-top: .5rem;
+  width: .4rem;
+  height: .4rem;
+  background-color: white;
+  border-radius: 50%;
+  transform: scaleY(10%);
+  animation: eye .3s linear forwards 10s;
+}
+
+#pencilJar .snail .eye::after {
+  margin-left: .02rem;
+  content: "";
+  display: flex;
+   width: .22rem;
+   height: .22rem;
+   background-color: black;
+   border-radius: 50%;
+ }
+
+@keyframes squishy {
+  0% {
+    width: 9.8rem;
+    height: 1.5rem;
+  }
+  50% {
+    width: 9.5rem;
+    height: 1.8rem;
+  }
+  100% {
+    width: 9.8rem;
+    height: 1.5rem;
+  }
+}
+
+@keyframes antenna {
+  0% {
+    width: 2rem;
+    height: 2rem;
+  }
+  50% {
+    width: 2.2rem;
+    height: 2.2rem;
+    transform: translate(-.1rem);
+  }
+  100% {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@keyframes travel-in-right {
+ from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(10rem);
+  }
+}
+
+@keyframes eye { 
+  to {
+    transform: scaleY(100%);
+  }
+}
