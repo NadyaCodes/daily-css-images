@@ -8,6 +8,7 @@ import Ruler from "./components/Ruler.js";
 import Notepad from "./components/Notepad.js";
 import Calendar from "./components/Calendar.js";
 import PencilJar from "./components/PencilJar.js";
+import Pizza from "./components/Pizza.js";
 
 export const buttonsArray = [
   { text: "Bear Cub", component: <BearCub /> },
@@ -20,4 +21,5 @@ export const buttonsArray = [
   { text: "Notepad", component: <Notepad /> },
   { text: "Calendar", component: <Calendar /> },
   { text: "Pencil Jar", component: <PencilJar /> },
+  { text: "Pizza", component: <Pizza /> },
 ];

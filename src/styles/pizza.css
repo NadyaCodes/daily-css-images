@@ -1,0 +1,384 @@
+#pizza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+}
+
+#pizza .crust {
+  background-image: radial-gradient(rgb(235, 201, 161) 60%, rgb(196, 153, 101) 65%, rgb(237, 203, 157) 70%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pizza .base {
+  background-color: rgb(151, 9, 9);
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#pizza .tomato-container {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  place-items: center; 
+}
+
+#pizza .tomato {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(202, 45, 45);
+  box-shadow: 0px 0px 10px -9px #000000;
+}
+
+#pizza .tomato:nth-child(1) {
+  visibility: hidden;
+}
+
+#pizza .tomato:nth-child(2), .tomato:nth-child(4) {
+  transform: translate(-2.2rem, 1.5rem);
+  
+}
+
+#pizza .tomato:nth-child(3) {
+  transform: translate(-2rem, -.5rem);
+  
+}
+
+#pizza .tomato:nth-child(5) {
+  transform: translate(-.5rem, 2rem);
+}
+
+#pizza .tomato:nth-child(6) {
+  transform: translate(-.5rem, -.5rem);
+}
+
+#pizza .tomato:nth-child(7) {
+  transform: translate(.5rem, -.5rem);
+}
+
+#pizza .tomato:nth-child(8) {
+  transform: translate(0rem, 2rem);
+
+}
+
+#pizza .tomato:nth-child(9) {
+  transform: translate(2.5rem, -2rem);
+  
+  
+}
+
+#pizza .tomato:nth-child(10) {
+  transform: translate(-.5rem, .5rem);
+
+}
+
+#pizza .tomato:nth-child(11) {
+  transform: translate(.5rem, .5rem);
+}
+
+#pizza .tomato:nth-child(12) {
+  
+  transform: translate(-2.8rem, -2rem);
+}
+
+
+#pizza .tomato:nth-child(13), .tomato:nth-child(15) {
+  transform: translate(2.3rem, -1.5rem);
+}
+
+#pizza .tomato:nth-child(14) {
+  transform: translate(2rem, .5rem);
+  
+}
+
+#pizza .tomato:nth-child(16), .tomato:nth-child(17) {
+  position: absolute;
+}
+
+#pizza .tomato:nth-child(16) {
+  transform: translate(0rem, -4rem);
+}
+
+#pizza .tomato:nth-child(17) {
+  transform: translate(0rem, 4rem);
+}
+
+
+
+#pizza .cheese-container {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  transform: translate(1.5rem, 0rem);
+}
+
+#pizza .cheese-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 0rem;
+  transform: rotate(20deg);
+}
+
+#pizza .cheese {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: rgb(253, 247, 236);
+  box-shadow: 0px 0px 10px -9px #000000;
+}
+
+#pizza .cheese:nth-child(1) {
+  transform: translate(.6rem, .6rem);
+}
+
+#pizza .cheese:nth-child(2) {
+  transform: translate(0rem, -1.2rem);
+}
+
+#pizza .cheese:nth-child(3) {
+  transform: translate(-.6rem, .6rem);
+}
+
+#pizza .cheese:nth-child(8) {
+  transform: translate(0rem, 1.2rem);
+}
+
+#pizza .cheese:nth-child(4) {
+  transform: translate(-1.2rem, 0rem);
+}
+
+#pizza .cheese:nth-child(5) {
+  width: 6rem;
+  height: 6rem;
+}
+
+#pizza .cheese:nth-child(6) {
+  transform: translate(1.2rem, 0rem);
+}
+
+#pizza .cheese:nth-child(7) {
+  transform: translate(.6rem, -.6rem);
+}
+
+#pizza .cheese:nth-child(9) {
+  transform: translate(-.6rem, -.6rem);
+}
+
+#pizza .basil-container {
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pizza .basil-wrapper {
+  position: absolute;
+  transform: rotate(-32deg);
+  margin-bottom: 9rem;
+}
+
+#pizza .basil {
+  height: 3rem;
+  width: 2rem;
+  background-color: green;
+  border-radius: 90% 3%  / 90% 3% ;
+  border: 0.5rem solid transparent;
+  transform-origin: bottom left;
+  box-shadow: 0px 0px 13px -3px #000000;
+}
+
+#pizza .basil-2 {
+  transform: rotate(50deg) translate(2rem);
+}
+
+#pizza .basil-3 {
+  transform: rotate(90deg) translate(3rem, -1rem);
+}
+
+#pizza .basil-4 {
+  transform: rotate(-50deg) translate(-1rem, -1rem);
+}
+
+#pizza .basil-5 {
+  transform: rotate(-90deg) translate(-1rem, -2.4rem);
+}
+
+#pizza .basil-6 {
+  transform: rotate(130deg) translate(3rem, -2rem);
+}
+
+#pizza .basil-7 {
+  transform: rotate(-150deg) translate(.7rem, -3.4rem);
+}
+
+#pizza .disappear-container {
+position: absolute;
+display: flex;
+justify-content: center;
+z-index: 10;
+width: 24rem;
+height: 24rem;
+border-radius: 50%;
+}
+
+#pizza .disappear {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7rem solid transparent;
+  border-right: 7rem solid transparent;
+  border-top: 12rem solid white;
+  border-radius: 50%;
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+#pizza .disappear:nth-child(1) {
+  animation: disappear-animation .2s linear forwards 2.5s;
+}
+
+#pizza .disappear:nth-child(2) {
+  transform: rotate(60deg);
+  animation: disappear-animation .2s linear forwards;
+}
+
+#pizza .disappear:nth-child(3) {
+  transform: rotate(120deg);
+  animation: disappear-animation .2s linear forwards .5s;
+}
+
+#pizza .disappear:nth-child(4) {
+  transform: rotate(180deg);
+  animation: disappear-animation .2s linear forwards 1s;
+}
+
+#pizza .disappear:nth-child(5) {
+  transform: rotate(240deg);
+  animation: disappear-animation .2s linear forwards 1.5s;
+}
+
+#pizza .disappear:nth-child(6) {
+  transform: rotate(300deg);
+  animation: disappear-animation .2s linear forwards 2s;
+}
+
+@keyframes disappear-animation {
+  to {
+    opacity: 1;
+  } 
+}
+
+#pizza .watcher-container {
+  animation: translate-in 1.5s linear forwards 3s;
+  position: absolute;
+  z-index: 20;
+  width: 0rem;
+}
+
+#pizza .watcher {
+
+  opacity: 0;
+  animation: roll-in 1.5s linear forwards 3s;
+
+}
+
+#pizza .eye {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: black;
+  transform: translateY(-1rem);
+}
+
+#pizza .eye::after {
+  content: "";
+  width: 4rem;
+  height: 10rem;
+  background-color: rgb(189, 127, 248);
+  border-radius: 50%;
+}
+
+#pizza .pupil {
+  width: 1.5rem;
+  height: 1rem;
+  opacity: 0;
+}
+
+#pizza .mouth-container {
+  height: 0rem;
+  transform: translateY(-1rem);
+}
+
+#pizza .mouth {
+  width: 3rem;
+  height: 2rem;
+  border-bottom: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  animation: smile 1s linear forwards 4.2s;
+}
+
+#pizza .cheeks {
+  display: flex;
+  flex-direction: row;
+  height: 0rem;
+  width: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-1.5rem);
+}
+
+#pizza .cheek {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  background-image: radial-gradient(rgb(246, 130, 150), transparent 60%);
+  border-radius: 50%;
+  animation: disappear-animation 1s linear forwards 4.7s;
+  opacity: 0;
+}
+
+@keyframes smile {
+  to {
+    width: 4rem;
+    height: 3rem;
+    transform: translateY(-1.5rem);
+  } 
+}
+
+@keyframes roll-in {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  } 
+  to {
+    opacity: 1;
+    transform: rotate(-720deg);
+  } 
+}
+
+@keyframes translate-in {
+  from {
+    transform: translateX(50vw);
+  } 
+  to {
+    opacity: 1;
+    transform:  translateX(0rem);
+  } 
+}
