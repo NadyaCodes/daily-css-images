@@ -105,6 +105,7 @@
 
 #pencilJar .snail-container {
   margin-left: 10rem;
+  margin-bottom: -7rem;
   position: absolute;
   bottom: 1.5rem;
   z-index: 10;

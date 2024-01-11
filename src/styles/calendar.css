@@ -75,7 +75,7 @@
 }
 
 
-#calendar, #pizza .watcher {
+#calendar .watcher {
   width: 14rem;
   height: 15rem;
   background-color: rgb(189, 127, 248);
@@ -86,7 +86,7 @@
   flex-direction: column;
 }
 
-#calendar, #pizza  .eye-container {
+#calendar  .eye-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -94,7 +94,7 @@
   margin-bottom: 3rem;
 }
 
-#calendar, #pizza .eye {
+#calendar .eye {
   width: 3.5rem;
   height: 4rem;
   background-color: rgb(246, 239, 253);
